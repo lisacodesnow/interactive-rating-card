@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="scss/main.scss">
+	<link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,32 +16,49 @@
   </style>
 </head>
 <body>
+	<main>
+		<div class="front_content-wrapper">
 
   <!-- Rating state start -->
+		<picture>
+			<img src="images/icon-star.svg" alt="star icon">
+		</picture>	
 
-  How did we do?
+		  <h1> How did we do?</h1>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+		  <p>
+			  Please let us know how we did with your support request. All feedback is appreciated 
+		  to help us improve our offering!
+		 </p>
+		 <div class="number_rating">  
+			 <button class="button_1"> 1</button>
+			  <button class="button_1"> 2</button>
+			  <button class="button_1"> 3</button>
+			  <button class="button_1"> 4</button>
+			  <button class="button_1"> 5</button>
+		</div>
 
-  1 2 3 4 5
-
-  Submit
-
+		 <button class="submit_button">  Submit </button>
+			
+	</div> <!--content wrapper end-->
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+	<!-- remove this class in javascript -->
+	<div class="thank_you_content-wrapper>">
+		<picture>
+			<img src="images/illustration-thank-you.svg" alt="thank you illustration">
+		</picture>
+		  <p class="selected-rating">You selected <!-- Add rating here --><span>4</span> out of 5</p>
 
-  You selected <!-- Add rating here --> out of 5
+		  <h1> Thank you! </h1>
 
-  Thank you!
+		 <p class="thank_you_message"> We appreciate you taking the time to give a rating. If you ever need more support, 
+		  don’t hesitate to get in touch!</p>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
+		  <!-- Thank you state end -->
+	</div><!-- thank you content wrapper end-->
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

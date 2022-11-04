@@ -1,3 +1,46 @@
-@charset "utf-8";
-/* CSS Document */
+/*Base Styles*/
+/*colors*/
+html {
+  font-size: 15px; }
+  html body {
+    background-color: #121417; }
+    html body main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      margin: 0px 20px; }
+      html body main .front_content-wrapper {
+        background-color: #252d37;
+        border-radius: 5%;
+        padding: 20px; }
+        html body main .front_content-wrapper picture img {
+          border: 2px solid #252d37;
+          border-radius: 50%;
+          padding: 10px;
+          background-color: #333e4d; }
+        html body main .front_content-wrapper h1 {
+          color: white;
+          font-family: "Overpass", sans-serif; }
+        html body main .front_content-wrapper p {
+          color: #7c8798;
+          font-familiy: "Overpass", sans-serif; }
+        html body main .front_content-wrapper .number_rating {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%; }
+          html body main .front_content-wrapper .number_rating .button_1 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #7c8798;
+            border: none;
+            background-color: #333e4d; }
+        html body main .front_content-wrapper .submit_button {
+          margin: 20px;
+          border: 1px solid orange;
+          width: 100px; }
 
+/*# sourceMappingURL=main.css.map */

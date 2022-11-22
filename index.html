@@ -5,14 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
- 
+  <link rel="stylesheet" href="scss/main.scss">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="scss/main.scss">
-	
-	<!--Google Font-->
-	
-	<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-	
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -49,6 +43,21 @@
 	</div> <!--content wrapper end-->
   <!-- Rating state end -->
 
+  <!-- Thank you state start -->
+	<!-- remove this class in javascript -->
+	<div class="thank_you_content-wrapper>">
+		<picture>
+			<img src="images/illustration-thank-you.svg" alt="thank you illustration">
+		</picture>
+		  <p class="selected-rating">You selected <!-- Add rating here --><span>4</span> out of 5</p>
+
+		  <h1> Thank you! </h1>
+
+		 <p class="thank_you_message"> We appreciate you taking the time to give a rating. If you ever need more support, 
+		  don’t hesitate to get in touch!</p>
+
+		  <!-- Thank you state end -->
+	</div><!-- thank you content wrapper end-->
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

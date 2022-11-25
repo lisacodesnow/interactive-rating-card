@@ -9,6 +9,7 @@ $medium-grey: hsl(216, 12%, 54%);
 $border-color: hsl(214, 20%, 25%);
 $dark-blue: hsl(213, 19%, 18%);
 $very-dark-blue: hsl(216, 12%, 8%);
+$orange: hsl(25, 97%, 53%);
 
 html{
 	font-size: 15px;
@@ -24,58 +25,163 @@ html{
 			flex-direction: column;
 			margin: 0px 20px;
 		
-	
-.front_content-wrapper{
-	background-color: $dark-blue;
-	border-radius: 5%;
-	padding: 20px;
-	
-	
-	picture{
-		img{
-		border: 2px solid $dark-blue;
+			.hide{
+				 /* '!important' is to make sure that when we add the class using JS, it takes precendence */
+   				 display: none !important;
+			}
+			.show{
+				display: block;
+			}
+				h1{
+						color: $white;
+						font-family: $font;
+						
+					}
+
+					p{
+						color: $medium-grey;
+						font-familiy: $font;
+
+					}
+				.front_content-wrapper{
+					background-color: $dark-blue;
+					border-radius: 5%;
+					padding: 20px;
+
+
+					picture{
+						img{
+						border: 2px solid $dark-blue;
+
+						border-radius: 50%;
+							padding: 10px;
+						background-color: $border-color;
+
+					}
+					}
+
 		
-		border-radius: 50%;
-			padding: 10px;
-		background-color: $border-color;
+
+				.number_rating{
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					width: 100%;
+
+					.button_1{
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						color: $medium-grey;
+						border: none;
+						background-color: $border-color;
+						cursor: pointer;
+						
+						&:hover{
+							background-color: $orange;
+							color: $white;
+						}
+						&:focus{
+							background-color: $light-grey;
+							color: $white;
+						}
+						}
+
+				}
+					.submit_button{
+						margin: 20px 0px;
+						border: none;
+						border-radius: 50px;
+						width: 100%;
+						padding: 10px 0px;
+						color: $white;
+						background-color: $orange;
+						cursor:pointer;
+						
+						&:hover{
+							color: $orange;
+						background-color: $white;
+						}
+					}
+				} /*front-end-wrapper end*/
 			
-	}
-	}
-	
-	h1{
-		color: $white;
-		font-family: $font;
-	}
-	
-	p{
-		color: $medium-grey;
-		font-familiy: $font;
-		
-	}
-	
-
-.number_rating{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	
-	.button_1{
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		color: $medium-grey;
-		border: none;
-		background-color: $border-color;
+			.thank_you_content-wrapper{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+				background-color: $dark-blue;
+				border-radius: 5%;
+				
+				picture{
+					display:flex;
+					justify-content: center;
+					padding: 40px 0px 20px;
+				}
+				
+				.selected-rating{
+					color: $orange;
+					border: none;
+					border-radius: 50px;
+					background-color: $border-color;
+					padding: 5px 20px;
+					
+				}
+				
+				.thank_you_message{
+					width: 91%;
+					margin-bottom: 40px;
+				}
+				
+				p{
+					text-align: center;
+					margin: 15px auto;
+					line-height: 1.5em;
+					
+				}
+				h1{
+					text-align: center;
+					margin: auto;
+					margin-top: 20px;
+					
+				}
+				.go_back{
+					color: $orange;
+					border: none;
+					border-radius: 50px;
+					background-color: $border-color;
+					
+					display: flex;
+					justify-content: center;
+					align-: center;
+					margin-bottom: 20px;
+					margin: 0px 20px 20px;
+					cursor: pointer;
+					
+					&:hover{
+						color: $white;
+						background-color: $orange;
+					}
+					
+					h2{
+						margin: 10px;
+						text-align: center;
+						width: 75%;
+					}
+				}
+				
+				
+			} /*thank-you wrapper ends*/
+					} /* main ends */
+		.attribution{
+			color: $white;
+			margin-bottom: 20px;
+			font-size: .75em;
+			
+			a{
+				color:$orange;
+				
+			}
 		}
-
-}
-	.submit_button{
-		margin: 20px;
-		border: 1px solid orange;
-		width: 100px;
-	}
-}
-	}
-	}
-}
+					} /* body ends */
+} /*html ends*/

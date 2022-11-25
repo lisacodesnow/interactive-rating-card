@@ -1,16 +1,31 @@
 /*Base Styles*/
 /*colors*/
 html {
-  font-size: 15px; }
+  font-size: 15px;
+  /* body ends */ }
   html body {
-    background-color: #121417; }
+    background-color: #121417;
+    /* main ends */ }
     html body main {
       height: 100vh;
       display: flex;
       justify-content: center;
       align-content: center;
       flex-direction: column;
-      margin: 0px 20px; }
+      margin: 0px 20px;
+      /*front-end-wrapper end*/
+      /*thank-you wrapper ends*/ }
+      html body main .hide {
+        /* '!important' is to make sure that when we add the class using JS, it takes precendence */
+        display: none !important; }
+      html body main .show {
+        display: block; }
+      html body main h1 {
+        color: white;
+        font-family: "Overpass", sans-serif; }
+      html body main p {
+        color: #7c8798;
+        font-familiy: "Overpass", sans-serif; }
       html body main .front_content-wrapper {
         background-color: #252d37;
         border-radius: 5%;
@@ -20,12 +35,6 @@ html {
           border-radius: 50%;
           padding: 10px;
           background-color: #333e4d; }
-        html body main .front_content-wrapper h1 {
-          color: white;
-          font-family: "Overpass", sans-serif; }
-        html body main .front_content-wrapper p {
-          color: #7c8798;
-          font-familiy: "Overpass", sans-serif; }
         html body main .front_content-wrapper .number_rating {
           display: flex;
           justify-content: space-around;
@@ -37,10 +46,79 @@ html {
             border-radius: 50%;
             color: #7c8798;
             border: none;
-            background-color: #333e4d; }
+            background-color: #333e4d;
+            cursor: pointer; }
+            html body main .front_content-wrapper .number_rating .button_1:hover {
+              background-color: #fb7413;
+              color: white; }
+            html body main .front_content-wrapper .number_rating .button_1:focus {
+              background-color: #959eac;
+              color: white; }
         html body main .front_content-wrapper .submit_button {
-          margin: 20px;
-          border: 1px solid orange;
-          width: 100px; }
+          margin: 20px 0px;
+          border: none;
+          border-radius: 50px;
+          width: 100%;
+          padding: 10px 0px;
+          color: white;
+          background-color: #fb7413;
+          cursor: pointer; }
+          html body main .front_content-wrapper .submit_button:hover {
+            color: #fb7413;
+            background-color: white; }
+      html body main .thank_you_content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        background-color: #252d37;
+        border-radius: 5%; }
+        html body main .thank_you_content-wrapper picture {
+          display: flex;
+          justify-content: center;
+          padding: 40px 0px 20px; }
+        html body main .thank_you_content-wrapper .selected-rating {
+          color: #fb7413;
+          border: none;
+          border-radius: 50px;
+          background-color: #333e4d;
+          padding: 5px 20px; }
+        html body main .thank_you_content-wrapper .thank_you_message {
+          width: 91%;
+          margin-bottom: 40px; }
+        html body main .thank_you_content-wrapper p {
+          text-align: center;
+          margin: 15px auto;
+          line-height: 1.5em; }
+        html body main .thank_you_content-wrapper h1 {
+          text-align: center;
+          margin: auto;
+          margin-top: 20px; }
+        html body main .thank_you_content-wrapper .go_back {
+          color: #fb7413;
+          border: none;
+          border-radius: 50px;
+          background-color: #333e4d;
+          display: flex;
+          justify-content: center;
+          align-: center;
+          margin-bottom: 20px;
+          margin: 0px 20px 20px;
+          cursor: pointer; }
+          html body main .thank_you_content-wrapper .go_back:hover {
+            color: white;
+            background-color: #fb7413; }
+          html body main .thank_you_content-wrapper .go_back h2 {
+            margin: 10px;
+            text-align: center;
+            width: 75%; }
+    html body .attribution {
+      color: white;
+      margin-bottom: 20px;
+      font-size: .75em; }
+      html body .attribution a {
+        color: #fb7413; }
+
+/*html ends*/
 
 /*# sourceMappingURL=main.css.map */

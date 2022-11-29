@@ -5,14 +5,15 @@ html {
   /* body ends */ }
   html body {
     background-color: #121417;
+    display: grid;
+    grid-template: 1fr 1fr;
+    height: 100vh;
     /* main ends */ }
     html body main {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-direction: column;
-      margin: 0px 20px;
+      width: 300px;
+      grid-row: 2/3;
+      /*even though no row was declared I think they come implied*/
+      grid-column: 2/3;
       /*front-end-wrapper end*/
       /*thank-you wrapper ends*/ }
       html body main .hide {
@@ -67,12 +68,9 @@ html {
             color: #fb7413;
             background-color: white; }
       html body main .thank_you_content-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
         background-color: #252d37;
-        border-radius: 5%; }
+        border-radius: 5%;
+        height: 470px; }
         html body main .thank_you_content-wrapper picture {
           display: flex;
           justify-content: center;
@@ -101,7 +99,7 @@ html {
           background-color: #333e4d;
           display: flex;
           justify-content: center;
-          align-: center;
+          text-align: center;
           margin-bottom: 20px;
           margin: 0px 20px 20px;
           cursor: pointer; }
@@ -115,7 +113,10 @@ html {
     html body .attribution {
       color: white;
       margin-bottom: 20px;
-      font-size: .75em; }
+      font-size: .75em;
+      display: flex;
+      justify-content: center;
+      margin-top: 25px; }
       html body .attribution a {
         color: #fb7413; }
 

@@ -16,14 +16,14 @@ html{
 	
 	body{
 		background-color: $very-dark-blue;
-		
+		display: grid;
+		grid-template: 1fr 1fr;
+		height: 100vh;
 		main{
-			height: 100vh;
-			display: flex;
-			justify-content: center;
-			align-content: center;
-			flex-direction: column;
-			margin: 0px 20px;
+			
+			width: 300px;
+			grid-row: 2/3; /*even though no row was declared I think they come implied*/
+			grid-column: 2/3;
 		
 			.hide{
 				 /* '!important' is to make sure that when we add the class using JS, it takes precendence */
@@ -47,6 +47,7 @@ html{
 					background-color: $dark-blue;
 					border-radius: 5%;
 					padding: 20px;
+					
 
 
 					picture{
@@ -106,12 +107,10 @@ html{
 				} /*front-end-wrapper end*/
 			
 			.thank_you_content-wrapper{
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-content: center;
+				
 				background-color: $dark-blue;
 				border-radius: 5%;
+					height: 470px;
 				
 				picture{
 					display:flex;
@@ -150,10 +149,10 @@ html{
 					border: none;
 					border-radius: 50px;
 					background-color: $border-color;
-					
+				
 					display: flex;
 					justify-content: center;
-					align-: center;
+					text-align: center;
 					margin-bottom: 20px;
 					margin: 0px 20px 20px;
 					cursor: pointer;
@@ -177,7 +176,9 @@ html{
 			color: $white;
 			margin-bottom: 20px;
 			font-size: .75em;
-			
+			display: flex;
+			justify-content: center;
+			margin-top: 25px;
 			a{
 				color:$orange;
 				

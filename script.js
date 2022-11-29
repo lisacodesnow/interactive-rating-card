@@ -13,7 +13,8 @@ submitButton.addEventListener("click",function(){
 	frontPage.classList.add("hide");
 	thankYouPage.classList.remove("hide");
 });
-	
+
+//forEach function is used to loop through an array, list, which is what button is by using the querySelectorAll
 	button.forEach(function(buttonPushed){
 		buttonPushed.addEventListener("click", function(){
 			ratingSelected.innerHTML = buttonPushed.innerHTML;

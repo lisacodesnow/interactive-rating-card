@@ -1,5 +1,6 @@
 // Scss Document
 /*Base Styles*/
+$font: 'Overpass', sans-serif;
 
 /*colors*/
 $white: hsl(0, 0%, 100%);
@@ -15,14 +16,14 @@ html{
 	
 	body{
 		background-color: $very-dark-blue;
-		display: grid;
-		grid-template: 1fr 1fr;
+		display: flex;
 		height: 100vh;
+		justify-content: center;
+		align-items: center;
 		main{
 			
 			width: 300px;
-			grid-row: 2/3; /*even though no row was declared I think they come implied*/
-			grid-column: 2/3;
+			
 		
 			.hide{
 				 /* '!important' is to make sure that when we add the class using JS, it takes precendence */

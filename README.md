@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-card-with-sass-and-javasript-KZ27XCnATI]
 - Live Site URL: [https://lisacodesnow.github.io/interactive-rating-card/]
 ## My process
 

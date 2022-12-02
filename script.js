@@ -1,6 +1,6 @@
 // JavaScript Document
 
-const button = document.querySelectorAll(".button_1"); //because its a list with the same class I have to use querySelectorAll so it becomes a list. Because its a list I don't have to put the buttons in an array
+const button = document.querySelectorAll(".button_1"); //because its a list with the same class I have to use querySelectorAll so it can select the list. Because its a list I don't have to put the buttons in an array
 const frontPage = document.querySelector(".front_content-wrapper");
 const thankYouPage = document.querySelector(".thank_you_content-wrapper")
 const submitButton = document.querySelector(".submit_button");

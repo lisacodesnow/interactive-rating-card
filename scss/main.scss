@@ -22,7 +22,7 @@ html{
 		align-items: center;
 		main{
 			
-			width: 300px;
+			width: 400px;
 			
 		
 			.hide{
@@ -41,6 +41,10 @@ html{
 					p{
 						color: $medium-grey;
 						font-familiy: $font;
+						line-height: 1.5em;
+						width: 90%;
+					
+						
 
 					}
 				.front_content-wrapper{
@@ -135,7 +139,6 @@ html{
 				p{
 					text-align: center;
 					margin: 15px auto;
-					line-height: 1.5em;
 					
 				}
 				h1{

@@ -11,7 +11,7 @@ html {
     align-items: center;
     /* main ends */ }
     html body main {
-      width: 300px;
+      width: 400px;
       /*front-end-wrapper end*/
       /*thank-you wrapper ends*/ }
       html body main .hide {
@@ -24,7 +24,9 @@ html {
         font-family: "Overpass", sans-serif; }
       html body main p {
         color: #7c8798;
-        font-familiy: "Overpass", sans-serif; }
+        font-familiy: "Overpass", sans-serif;
+        line-height: 1.5em;
+        width: 90%; }
       html body main .front_content-wrapper {
         background-color: #252d37;
         border-radius: 5%;
@@ -84,8 +86,7 @@ html {
           margin-bottom: 40px; }
         html body main .thank_you_content-wrapper p {
           text-align: center;
-          margin: 15px auto;
-          line-height: 1.5em; }
+          margin: 15px auto; }
         html body main .thank_you_content-wrapper h1 {
           text-align: center;
           margin: auto;

@@ -5,7 +5,7 @@ const frontPage = document.querySelector(".front_content-wrapper");
 const thankYouPage = document.querySelector(".thank_you_content-wrapper")
 const submitButton = document.querySelector(".submit_button");
 const ratingSelected = document.querySelector("span");
-console.log(button);
+
 const goBack = document.querySelector(".go_back");
 
 

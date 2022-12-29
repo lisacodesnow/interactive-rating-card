@@ -2,6 +2,7 @@
 /*colors*/
 html {
   font-size: 15px;
+  /* main ends */
   /* body ends */ }
   html body {
     background-color: #121417;
@@ -9,11 +10,10 @@ html {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    /* main ends */ }
+    /*thank-you wrapper ends*/ }
     html body main {
       width: 400px;
-      /*front-end-wrapper end*/
-      /*thank-you wrapper ends*/ }
+      /*front-end-wrapper end*/ }
       html body main .hide {
         /* '!important' is to make sure that when we add the class using JS, it takes precendence */
         display: none !important; }
@@ -70,7 +70,7 @@ html {
       html body main .thank_you_content-wrapper {
         background-color: #252d37;
         border-radius: 5%;
-        height: 470px; }
+        height: 360px; }
         html body main .thank_you_content-wrapper picture {
           display: flex;
           justify-content: center;
@@ -91,33 +91,19 @@ html {
           text-align: center;
           margin: auto;
           margin-top: 20px; }
-        html body main .thank_you_content-wrapper .go_back {
-          color: #fb7413;
-          border: none;
-          border-radius: 50px;
-          background-color: #333e4d;
-          display: flex;
-          justify-content: center;
+        html body main .thank_you_content-wrapper h2 {
+          margin: 10px;
           text-align: center;
-          margin-bottom: 20px;
-          margin: 0px 20px 20px;
-          cursor: pointer; }
-          html body main .thank_you_content-wrapper .go_back:hover {
-            color: white;
-            background-color: #fb7413; }
-          html body main .thank_you_content-wrapper .go_back h2 {
-            margin: 10px;
-            text-align: center;
-            width: 75%; }
-    html body .attribution {
-      color: white;
-      margin-bottom: 20px;
-      font-size: .75em;
-      display: flex;
-      justify-content: center;
-      margin-top: 25px; }
-      html body .attribution a {
-        color: #fb7413; }
+          width: 75%; }
+  html .attribution {
+    color: white;
+    margin-bottom: 20px;
+    font-size: .75em;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px; }
+    html .attribution a {
+      color: #fb7413; }
 
 /*html ends*/
 

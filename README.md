@@ -16,6 +16,11 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 
 # Overview
+This app is a interactive rating card that asks the user for feedback by rating their efforts between 1 and 5, 1 being the worse and 5 the best.
+
+Instructions:
+
+- Select a number and then hit submit.
 
 ### The challenge
 
@@ -37,15 +42,15 @@ Users should be able to:
 - Live Site URL: [https://lisacodesnow.github.io/interactive-rating-card/]
 ## My process
 
-- Build out the site mobile first. In this case this card stays the same size regardless of the screen size.
+- Built the site mobile first. In this case this card stays the same size regardless of the screen size, so it has a fixed width.
 - Coded HTML first
-- This is my second project using SCSS so I build from out to in. Building the structure
-  -Meaning I start with positiong all of the elements. 
-  - I use flex, figure out padding, margins, etc...
-  - Color, line-height, and final tweeks goes last because its the tiny things
+- This is my second project using SCSS so I built from out to in. So I created my parent elements first and added the children last.
+  - I used flexbox, figured the out padding, and margin spaces between elements.
+  - Color, line-height, and final tweeks goes last because its the tiny things.
 
 ### Built with
 
+- Javascript
 - Semantic HTML5 markup
 - SCSS
 - Flexbox
@@ -103,7 +108,7 @@ Users should be able to:
     ```
   3. Used foreach method to loop through the list so the button that's pushed can be displayed on the back of the card
     ```js
-    //forEach function is used to loop through an array, list, which is what button is by using the querySelectorAll
+    //forEach function is used to loop through an array, list, which is what the button is by using the querySelectorAll
 	button.forEach(function(buttonPushed){
 		buttonPushed.addEventListener("click", function(){
 			ratingSelected.innerHTML = buttonPushed.innerHTML;
@@ -115,9 +120,8 @@ Users should be able to:
 
 ### Continued development
 
-- I want to focus on what elements I need in JS to do what I want to 
-- Like knowing how and when to use certain things in JS
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I want to focus on what elements I need in JS to write the correct functions. 
+- Like knowing how and when to use certain methods in JS
 
 
 ## Author
